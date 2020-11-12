@@ -13,6 +13,7 @@ In Python, scripting is fun! However, writing a compiled, versioned, stand-alone
 * After downloading the template, edit `project_name.txt` to contain your project's name. This will be the name of the compiled executable, the folder containing it, and your conda environment.
 * Create a new conda environment with the name matching `project_name.txt`.
 * `pip install semantic-version` (within activated conda environment).
+* `conda install -c conda-forge nuitka` (within activated conda environment).
 * Delete `.git` and create a new repository (`git init`).
 
 ## Usage
