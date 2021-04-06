@@ -1,1 +1,1 @@
-python-standalone-template
+python-standalone-example
