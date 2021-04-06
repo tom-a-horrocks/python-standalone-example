@@ -9,11 +9,7 @@ REM set site_packages=%CONDA_PREFIX%\Lib\site-packages
 
 REM Compile into "build" folder
 if exist build rmdir build /s /q
-python -m nuitka --standalone --mingw64 --follow-imports --output-dir build src/main.py
-
-REM Copy in resources folder, including hidden folders
-mkdir "build\\main.dist\\resources"
-xcopy "src\\resources" "build\\main.dist\\resources" /S /E /H
+python -m nuitka --standalone --output-dir build --include-data-file=src/resources/*=resources/ src/main.py
 
 REM Rename executable and move distribution to 'dist' folder
 rename "build\\main.dist\\main.exe" "%project_name%.exe"
