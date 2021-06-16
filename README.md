@@ -8,8 +8,11 @@ In Python, scripting is fun! However, writing a compiled, versioned, stand-alone
 ## Set-up
 * After downloading the template, edit `project_name.txt` to contain your project's name. This will be the name of the compiled executable, the folder containing it, and your conda environment.
 * Create a new conda environment with the name matching `project_name.txt`.
-* `pip install semantic-version nuitka` (within activated conda environment).
-* Delete `.git` and create a new repository (`git init`).
+* `pip install semantic-version nuitka pyside2` (within activated conda environment).
+* `cd <project dir>`
+* `rm -rf .git`
+* `git init`
+* `git submodule add git@github.com:tom-a-horrocks/python-standalone-example.git src/qtbind`
 
 ## Usage
 Your program's entry point is `src/main.py`. Any files you place in the `resources` folder will be available in both the scripted and compiled versions of your program; see how `main.py` reads `resources/version.txt`.
