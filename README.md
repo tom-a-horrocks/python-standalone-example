@@ -12,7 +12,7 @@ In Python, scripting is fun! However, writing a compiled, versioned, stand-alone
 * `cd <project dir>`
 * `rm -rf .git`
 * `git init`
-* `git submodule add git@github.com:tom-a-horrocks/python-standalone-example.git src/qtbind`
+* `git submodule add git@github.com:tom-a-horrocks/qt-python-mvc.git src/qtbind`
 
 ## Usage
 Your program's entry point is `src/main.py`. Any files you place in the `resources` folder will be available in both the scripted and compiled versions of your program; see how `main.py` reads `resources/version.txt`.
