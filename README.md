@@ -1,3 +1,6 @@
+# Warning
+This repository currently uses Nuitka with PySide2. This compiles and runs, but I've noticed that QT signals and events aren't properly handled. I recommend waiting for PySide6.1, which will contain Nuitka-enabling fixes, or using PyInstaller instead of Nuitka.
+
 # Python Template
 In Python, scripting is fun! However, writing a compiled, versioned, stand-alone Python application for Windows is not. This template helps with the latter, assuming you're happy with Nuitka for compilation, conda for environment management, and git for version control. Everything is glued together through the magic of *shudders* batch scripts. 
 
